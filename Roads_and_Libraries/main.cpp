@@ -34,7 +34,6 @@ long long cc_load_cnt(int n, int m, int cl, int cr) {
 		if (!visited[i]) {
 			dfs(i, &cnt);
 			res += cl + (cnt - 1) * min(cr, cl);
-			cout << "cnt" << cnt << "\n";
 		}
 	}
 	return res;
