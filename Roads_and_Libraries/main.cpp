@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/torque-and-development/problem
+
 #include <iostream>
 #include <vector>
 
