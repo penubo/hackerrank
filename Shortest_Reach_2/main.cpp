@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/challenges/dijkstrashortreach/problem?h_r=internal-search
+
 #include <vector>
 #include <iostream>
 #include <queue>
@@ -34,11 +36,8 @@ void solution() {
 	q.push({0, s});
 
 	while (!q.empty()) {
-		int a = q.top().second;
-		q.pop();
-
-		if (visited[a])
-			continue;
+		int a = q.top().second; q.pop();
+		if (visited[a]) continue;
 		visited[a] = true;
 		for (auto u : adj[a]) {
 			int b = u.first;
